@@ -1,2 +1,13 @@
 # ds_sp7
-This repository houses the web application project for sprint 7 in triple ten's data science course
+
+In Mexico, Arsenic is a prevalent contaminant of ground water, which supplies of to 64% of water destined for human consumption (https://www.dapa.gob.mx/100-datos-y-cifras-del-agua-en-mexico?utm_source=chatgpt.com). Over exposure to arsenic is potentially lethal (cancer, cardiovascular disease, type 2 diabetes, pulmonary disease) and tends to cause a plethora of health complications, including IQ and memory deficits, damage to motor and sensory neurons, and adverse reproductive outcomes (https://cdn.who.int/media/docs/default-source/wash-documents/wash-chemicals/arsenic-bd-old.pdf?sfvrsn=d3fef4be_4&utm_source=chatgpt.com, https://www.atsdr.cdc.gov/environmental-medicine/hcp/clinicianbriefarsenic/index.html?utm_source=chatgpt.com). It is also one of the most costly contaminants to test for and remove from the water supply. So its study should be a major concern to pubic health, as well as development and labor economics. Moreover, visualizing arsenic levels and contamination (when Arsenic levels exceed the 0.01 mg/L permissible limit for drinking water according to Mexican Norm NOM-127-SSA1-2021) in Mexico's main bodies of water using CONAGUA's water quality data is easier than examining the prevelance of other contaminants. Arsenic level are measured 90% of the time in CONAGUA's water quality samples, potentially allowing for a more complete or representive picture of Arsenic contamination in Mexico. In comparison, other harmful contaminants, such as Fluoride and Cadmium, are measured less than 10% of the time, which, in the absence of a probability sample, will prevent users from getting a complete picture of these minerals' prevalence and concentration on Mexican soil. 
+
+This repository houses a web application that allows users to visualize Arsenic levels and contamination in Mexico's main bodies of water in three different ways:
+1. A histogram of levels of total Arsenic (mg/L) found in water samples taken between 2012-2024 
+2. A scatter plot of total Arsenic levels (mg/L) over time by type of water (ground vs. surface)
+3. A bar graph of the annual percentage of sites with Arsenic levels above the drinking water permissible limit of 0.01 mg/L from 2012-2024
+
+The original data file is comprised of 129,235 observations and a total of 480 different variable. The sample is composed of 7771 sites taken from 1957 different bodies of water in Mexico. Data comes comes from RENAMECA (Red Nacional de Mecidicon de Calidad del Agua) 2012-2024 Water Quality Results publicly published by CONAGUA on May 6, 2025 in TODOS LOS MONITOREOS.xlsb found on the following website: 
+https://www.gob.mx/conagua/es/articulos/resultados-de-la-red-nacional-de-medicion-de-calidad-del-agua-renameca?idiom=es
+
+The aplication is project that was completed for Sprint 7 in Triple Ten's Data Science Bootcamp. 
