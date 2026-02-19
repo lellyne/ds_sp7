@@ -11,7 +11,7 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 
 # load data
-df_s = pd.read_parquet('../tlm_conagua_limpio.parquet')
+df_s = pd.read_parquet('tlm_conagua_limpio.parquet')
 
 
 ########################################################################
