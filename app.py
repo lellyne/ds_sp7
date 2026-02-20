@@ -128,7 +128,7 @@ if scatter_As:
 
 if bar_As:
     # escribir un mensaje
-    st.write('Creación de un gráfico de barra de los excesos de arsénico encontrados anualmente en aguas subterráneas y superficiales')
+    st.write('Creación de un gráfico de barras de los excesos de arsénico encontrados anualmente en aguas subterráneas y superficiales')
     # 1) Crear tabla anual (numérica) si no la tienes ya
     tabla_excesos_anual = (
         df_s
@@ -200,7 +200,7 @@ if bar_As:
             f"⚠️ No encontré el tipo '{tipo_sup}' en sub_o_sup. Tipos disponibles: {tipos_disponibles}")
     # 6) Layout general
     fig.update_layout(
-        title="Porcentaje de muestras anuales que exceden el límite de arsénico (NOM-127-SSA1-2021)",
+        title="Porcentaje de muestras anuales de agua en México que exceden el límite de arsénico (NOM-127-SSA1-2021)",
         showlegend=False,
         bargap=0.15
     )
