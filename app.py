@@ -21,7 +21,7 @@ df_s = pd.read_parquet('tlm_conagua_limpio.parquet')
 # Crear un encabezado
 ########################################################################
 
-st.header('Arsénico en Los Cuerpos de Agua de México de 2012-2024')
+st.header('Arsénico en los Principales Cuerpos de Agua de México de 2012-2024')
 st.caption(
     'Con datos oficiales de CONAGUA del 2025-05-06: [Resultados de la RENAMECA](https://www.gob.mx/conagua/es/articulos/resultados-de-la-red-nacional-de-medicion-de-calidad-del-agua-renameca?idiom=es)')
 
