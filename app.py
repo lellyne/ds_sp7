@@ -200,7 +200,7 @@ if bar_As:
             f"⚠️ No encontré el tipo '{tipo_sup}' en sub_o_sup. Tipos disponibles: {tipos_disponibles}")
     # 6) Layout general
     fig.update_layout(
-        title="Porcentaje de muestras anuales que exceden el límite de Arsénico (NOM-127-SSA1-2021)",
+        title="Porcentaje de muestras anuales que exceden el límite de arsénico (NOM-127-SSA1-2021)",
         showlegend=False,
         bargap=0.15
     )
