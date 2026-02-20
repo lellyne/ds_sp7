@@ -29,18 +29,18 @@ st.caption(
 # Crear casillas de verificacion
 #######################################################################
 
-st.subheader('Selecciona los graficos que deseas visualizar:')
+st.subheader('Selecciona los gráficos que deseas visualizar:')
 
 # Casilla 1 : hist as_tot
-hist_As = st.checkbox('Construir un histograma de arsenico')
+hist_As = st.checkbox('Construir un histograma de arsénico')
 
 # Casilla 2 : scatter as_tot + fecha_realizacion_dt
 scatter_As = st.checkbox(
-    'Construir un grafico de dispersion de arsencio en el tiempo')
+    'Construir un gráfico de dispersión de arséncio en el tiempo')
 
 # Casilla 3 : barras as_tot + ano + sub_o_sup
 bar_As = st.checkbox(
-    'Construir un grafico de barras de excesso arsencio en el tiempo')
+    'Construir un gráfico de barras de los excessos de arséncio en el tiempo')
 
 ########################################################################
 # Logica para mostrar graficos segun la casilla seleccionada
@@ -49,7 +49,7 @@ bar_As = st.checkbox(
 # grafico 1
 if hist_As:
     # escribir un menasaje en la apli
-    st.write('Creacion de un histograma de los niveles de arsenico total de 2012-2024')
+    st.write('Creación de un histograma de los niveles de arsénico total de 2012-2024')
 
     # crear un hist con plotly.graph_objects
     fig = go.Figure()
@@ -90,7 +90,7 @@ if hist_As:
 # grafico 2
 if scatter_As:
     # escribir un mensaje
-    st.write('Creacion de un grafico de dispersion de los mg/L de arsenico encontrado en las muestras de agua atraves del tiempo segun el tipo de agua')
+    st.write('Creación de un gráfico de dispersión de los mg/L de arsénico encontrados en las muestras de agua através del tiempo, según el tipo de agua')
     # filtrar datos válidos
     df_plot = df_s.dropna(
         subset=['as_tot_float', 'fecha_realizacion_dt', 'sub_o_sup'])
@@ -128,7 +128,7 @@ if scatter_As:
 
 if bar_As:
     # escribir un mensaje
-    st.write('Creacion de un grafico de barra de los excesos de arsenico encontrados anualmente en aguas subterraneas y superficiales')
+    st.write('Creación de un gráfico de barra de los excesos de arsénico encontrados anualmente en aguas subterráneas y superficiales')
     # 1) Crear tabla anual (numérica) si no la tienes ya
     tabla_excesos_anual = (
         df_s
@@ -152,9 +152,9 @@ if bar_As:
 
     def add_bar(fig, col_idx, tipo, titulo_subplot):
         # Series por año
-        y_prop = pivot[('proporcion_exceso', tipo)] * 100          # a %
+        y_prop = pivot[('proporcion_exceso', tipo)] * 100   # a %
         txt_tot = pivot[('total', tipo)].astype(
-            'Int64')           # totales (puede tener <NA>)
+            'Int64')    # totales (puede tener <NA>)
         # limpiar NaNs para plot
         years = y_prop.index
         y_vals = y_prop.values
