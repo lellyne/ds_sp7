@@ -2,7 +2,7 @@ streamlit
 pandas
 plotly
 nbformat
-unidecode
-unicodedata
-numpy
-re
+#unidecode
+#unicodedata
+#numpy
+#re
