@@ -22,9 +22,8 @@ df_s = pd.read_parquet('tlm_conagua_limpio.parquet')
 ########################################################################
 
 st.header('Arsénico en Los Cuerpos de Agua de México de 2012-2024 (CONAGUA_resultadosRENMECA_2025-05-06)')
-st.write('**Fuente:** [CONAGUA - Resultados de la RENAMECA](https://www.gob.mx/conagua/es/articulos/resultados-de-la-red-nacional-de-medicion-de-calidad-del-agua-renameca?idiom=es)')
-st.markdown('*Fuente: [CONAGUA - Resultados de la RENAMECA](https://www.gob.mx/conagua/es/articulos/resultados-de-la-red-nacional-de-medicion-de-calidad-del-agua-renameca?idiom=es)*')
-st.caption('Fuente: [CONAGUA - Resultados de la RENAMECA](https://www.gob.mx/conagua/es/articulos/resultados-de-la-red-nacional-de-medicion-de-calidad-del-agua-renameca?idiom=es)')
+st.caption(
+    'Fuente: Datos de CONAGUA del 2025-05-06 [Resultados de la RENAMECA](https://www.gob.mx/conagua/es/articulos/resultados-de-la-red-nacional-de-medicion-de-calidad-del-agua-renameca?idiom=es)')
 
 ########################################################################
 # Crear casillas de verificacion
