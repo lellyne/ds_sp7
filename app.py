@@ -13,7 +13,6 @@ from plotly.subplots import make_subplots
 # load data
 df_s = pd.read_parquet('tlm_conagua_limpio.parquet')
 
-
 ########################################################################
 # Crear contendio de la apli basada en Streamlit
 ########################################################################
@@ -22,7 +21,10 @@ df_s = pd.read_parquet('tlm_conagua_limpio.parquet')
 # Crear un encabezado
 ########################################################################
 
-st.header('Visualizaciones de Niveles de Arsenico en Los Cuerpos de Agua de Mexico de 2012-2024 (CONAGUA_resultadosRENMECA_2025-05-06)')
+st.header('Arsénico en Los Cuerpos de Agua de México de 2012-2024 (CONAGUA_resultadosRENMECA_2025-05-06)')
+st.write('**Fuente:** [CONAGUA - Resultados de la RENAMECA](https://www.gob.mx/conagua/es/articulos/resultados-de-la-red-nacional-de-medicion-de-calidad-del-agua-renameca?idiom=es)')
+st.markdown('*Fuente: [CONAGUA - Resultados de la RENAMECA](https://www.gob.mx/conagua/es/articulos/resultados-de-la-red-nacional-de-medicion-de-calidad-del-agua-renameca?idiom=es)*')
+st.caption('Fuente: [CONAGUA - Resultados de la RENAMECA](https://www.gob.mx/conagua/es/articulos/resultados-de-la-red-nacional-de-medicion-de-calidad-del-agua-renameca?idiom=es)')
 
 ########################################################################
 # Crear casillas de verificacion
